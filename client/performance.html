@@ -1,0 +1,23 @@
+<div class="performance-panel">
+  <table class="striped centered">
+    <thead>
+      <tr>
+          <th>Wallet</th>
+          <th>Invested</th>
+          <th>Value</th>
+          <th>ROI</th>
+          <th>ROI %</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr ng-repeat="wallet in wallets">
+        <td>{{wallet.name}}</td>
+        <td>{{wallet.amountInvested | currency:""}} <span class="cur">PLN</span></td>
+        <td>{{getWalletValue(wallet.contents) | currency:""}} <span class="cur">PLN</span></td>
+        <td>{{getWalletValue(wallet.contents) - wallet.amountInvested | currency:""}} <span class="cur">PLN</span></td>
+        <td>{{(getWalletValue(wallet.contents) - wallet.amountInvested) / wallet.amountInvested * 100 | number}}%</td>
+      </tr>
+    </tbody>
+  </table> 
+</div>

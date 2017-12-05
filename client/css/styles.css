@@ -1,0 +1,47 @@
+.progress-container {
+    height: 4px;
+    margin: .5rem 0 1rem 0;    
+}
+
+table td {
+    position: relative;
+}
+
+table td .cur {
+    /*position: absolute;*/
+    /*left: 100px;*/
+    margin-left: 12px;
+}
+
+.wallet-manager {
+    margin-top: 24px;
+}
+
+.wallet-card .cur {
+    /*position: absolute;*/
+    /*right: 100px;*/
+    margin-left: 12px;
+}
+
+.total-row {
+    font-weight: 500;
+}
+
+.performance-panel {
+    margin-top: 24px;
+}
+
+.card-title input {
+    max-width: 200px;
+    font-size: 24px !important;
+    color: white;
+    text-align: center;
+}
+
+.wallet-card .top-settings .label {
+    margin-top: 1rem;
+}
+
+table input {
+    max-width: 100px;
+}

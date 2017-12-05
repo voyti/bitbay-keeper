@@ -1,0 +1,63 @@
+
+<div class="wallet-manager">
+  <div class="row center">
+    <h5 class="header col s12 light">Manage wallets</h5>
+  </div>
+  
+    <div class="fixed-action-btn toolbar">
+    <a class="btn-floating btn-large orange">
+      <i class="large material-icons">mode_edit</i>
+    </a>
+    
+    <ul>
+      <li class="waves-effect waves-light"><a href="#!" ng-click="addWallet()"><i class="material-icons">add</i><i class="material-icons">account_balance_wallet</i></a></li>
+      <li class="waves-effect waves-light"><a href="#!" ng-click="saveData()"><i class="material-icons">save</i></li>
+    </ul>
+  </div>
+  
+  <div ng-repeat="wallet in wallets">
+        <div class="col l4 m6 s12">
+          <div class="wallet-card card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title"><input placeholder="0" type="text" ng-model="wallet.name"></input></span>
+              <a class="btn-floating halfway-fab waves-effect waves-light indigo lighten-1"><i class="material-icons">save</i></a>
+                <div class="row top-settings">
+                  <div class="col s6 label">Amount invested</div>
+                  <div class="input-field col s6">
+                   <input placeholder="0" id="amount_invested" type="text" ng-model="wallet.amountInvested">
+                  </div>
+                </div>
+
+              <p>
+                <table ng-if="wallet.contents" class="centered">
+                  <thead>
+                    <tr>
+                        <th>Crypto</th>
+                        <th>Amount</th>
+                        <th>Value</th>
+                    </tr>
+                  </thead>
+        
+                  <tbody>
+                    <tr ng-repeat="position in wallet.contents">
+                      <td>{{position.crypto}}</td>
+                      <td><input placeholder="0" type="text" ng-model="position.amount"></input></td>
+                      <td>{{getCryptoValue(position.crypto, position.amount) | currency:""}}<span class="cur">PLN</span></td>
+                    </tr>
+                    
+                    <tr class="total-row">
+                      <td>TOTAL</td>
+                      <td>-</td>
+                      <td>{{getWalletValue(wallet.contents) | currency:""}}<span class="cur">PLN</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="#" ng-click="removeWallet(wallet.id)">Delete wallet</a>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
