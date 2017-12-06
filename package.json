@@ -17,8 +17,8 @@
     "request-promise": "^4.2.2",
     "socket.io": "~0.9.14",
     "urlencode": "^1.1.0"
-  }
+  },
   "scripts": {
     "start": "node server.js"
-  },
+  }
 }
