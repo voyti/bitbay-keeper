@@ -8,7 +8,7 @@
     $scope.wallets = [{
       name: 'Voyti',
       id: 'voyti0',
-      amountInvested: 4570.00,
+      amountInvested: 6135.00,
       contents: [{
         crypto: 'BTC',
         amount: 0,
@@ -17,7 +17,7 @@
         amount: 66.02153717,
       }, {
         crypto: 'ETH',
-        amount: 1.99139998,
+        amount: 3.00139998,
       }, {
         crypto: 'LTC',
         amount: 6.14942384,
@@ -28,6 +28,9 @@
       id: 'voyti2',
       amountInvested: 1200.00,
       contents: [{
+        crypto: 'PLN',
+        amount: 650.50,
+      }, {
         crypto: 'BTC',
         amount: 0.01185185,
       }, {
@@ -45,6 +48,9 @@
       id: 'voyti1',
       amountInvested: 3000.00,
       contents: [{
+        crypto: 'PLN',
+        amount: 1601.31,
+      }, {
         crypto: 'BTC',
         amount: 0.02917525,
       }, {
