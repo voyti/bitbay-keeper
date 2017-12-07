@@ -10,6 +10,9 @@
       id: 'voyti0',
       amountInvested: 6135.00,
       contents: [{
+        crypto: 'PLN',
+        amount: 1836.09,
+      }, {
         crypto: 'BTC',
         amount: 0,
       }, {
