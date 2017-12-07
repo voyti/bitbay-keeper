@@ -32,7 +32,7 @@
         amount: 650.50,
       }, {
         crypto: 'BTC',
-        amount: 0.01185185,
+        amount: 0,
       }, {
         crypto: 'LSK',
         amount: 16.46131687,
@@ -52,7 +52,7 @@
         amount: 1601.31,
       }, {
         crypto: 'BTC',
-        amount: 0.02917525,
+        amount: 0,
       }, {
         crypto: 'LSK',
         amount: 36.01008282,
@@ -121,7 +121,7 @@
     
     $scope.getCryptoValue = function(crypto, amount) {
       const cryptoData = _.find($scope.marketData, { crypto });
-      return cryptoData? cryptoData.values[0] * amount : 1;
+      return cryptoData? cryptoData.values[0] * amount : amount;
     };
     
     $scope.getWalletValue = function(walletContents) {
