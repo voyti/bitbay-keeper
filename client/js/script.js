@@ -8,7 +8,7 @@
     $scope.wallets = [{
       name: 'Voyti',
       id: 'voyti0',
-      amountInvested: 6135.00,
+      amountInvested: 7971.09,
       contents: [{
         crypto: 'PLN',
         amount: 1836.09,
