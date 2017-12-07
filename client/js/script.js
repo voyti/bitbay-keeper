@@ -120,7 +120,8 @@
     }
     
     $scope.getCryptoValue = function(crypto, amount) {
-      return _.find($scope.marketData, { crypto }).values[0] * amount;
+      const cryptoData = _.find($scope.marketData, { crypto });
+      return cryptoData? cryptoData.values[0] * amount : 1;
     };
     
     $scope.getWalletValue = function(walletContents) {
