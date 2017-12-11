@@ -3,6 +3,11 @@
     margin: .5rem 0 1rem 0;    
 }
 
+#logo-container img {
+    height: 48px;
+    margin-top: 8px;
+}
+
 table td {
     position: relative;
 }
